@@ -1,0 +1,157 @@
+import {StyleSheet} from 'react-native';
+import {hp, wp} from '../../../helpers/responsiveText';
+import Colors from '../../../themes/Colors';
+
+const styles = StyleSheet.create({
+  container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: hp(100),
+    width: wp(100),
+    backgroundColor: '#fff',
+  },
+  mainSchrolContainer: {
+    height: hp(100),
+    width: wp(100),
+  },
+  header: {
+    height: hp(6),
+    width: wp(100),
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+  },
+  headerTextContainer: {
+    width: wp(70),
+    height: hp(6),
+    justifyContent: 'center',
+  },
+  headerText: {
+    color: '#000',
+    fontWeight: 'bold',
+    fontSize: 20,
+  },
+  headerIcon: {
+    width: wp(30),
+    height: hp(6),
+    flexDirection: 'row',
+    paddingLeft: wp(3),
+  },
+  inputFieldContainer: {
+    height: hp(7),
+    width: wp(100),
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row',
+    textAlign: 'center',
+    paddingRight: wp(5),
+  },
+  inputField: {
+    height: hp(5),
+    width: wp(95),
+    borderWidth: 2,
+    borderColor: Colors.Border,
+    paddingHorizontal: wp(8),
+    fontWeight: 'bold',
+    color: Colors.Placeholder,
+    fontSize: 14,
+    borderRadius: 10,
+  },
+  topCardContainer: {
+    height: hp(27),
+    width: wp(100),
+    borderRadius: 6,
+    elevation: 5,
+  },
+  imageBackground: {
+    flex: 1,
+    resizeMode: 'cover',
+    justifyContent: 'center',
+  },
+  imageBackgroundText: {
+    justifyContent: 'flex-end',
+    marginTop: hp(20),
+    marginHorizontal: wp(4),
+  },
+  popularTextContainer: {
+    height: hp(6),
+    width: wp(90),
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    alignSelf: 'center',
+  },
+  popularCard: {
+    marginHorizontal: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: hp(27),
+    width: wp(42),
+    borderRadius: 10,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 3,
+      height: 3,
+    },
+    shadowOpacity: 0.29,
+    shadowRadius: 4.65,
+    elevation: 4,
+    marginVertical: 10,
+  },
+  popularCardImageContainer: {
+    height: hp(18),
+    width: wp(42),
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  popularCardImage: {
+    height: hp(18),
+    width: wp(42),
+    resizeMode: 'cover',
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+  },
+  popularCardTextContainer: {
+    height: hp(9),
+    width: wp(42),
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    borderBottomRightRadius: 10,
+    borderBottomLeftRadius: 10,
+    backgroundColor: '#fff',
+    paddingHorizontal: 10,
+  },
+  longCard: {
+    marginHorizontal: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: hp(35),
+    width: wp(42),
+    borderRadius:10,
+    marginBottom:hp(12),
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 3,
+      height: 3,
+    },
+    shadowOpacity: 0.29,
+    shadowRadius: 4.65,
+    elevation: 4,
+  },
+  longCardImage:{
+    marginHorizontal: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: hp(35),
+    width: wp(42),
+    borderRadius:10, 
+  },
+  longCardTextContainer:{
+    height: hp(7),
+    width: wp(42),
+    alignSelf:'flex-end',
+    justifyContent: 'space-between',
+    marginTop:hp(24),
+    paddingLeft:wp(3)
+  }
+});
+export default styles;
